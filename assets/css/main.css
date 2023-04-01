@@ -9,12 +9,12 @@
     --color-border: #373737;
     --ff-body: "Space Mono", sans-serif;
     /* font size */
-    --fd-sm: 1.4rem;
+    --fs-sm: 1.4rem;
     --fs-md: 1.6rem;
     --fs-lg: 2rem;
     --fs-xl: 2.4rem;
-    --fd-xxl: 3.2rem;
-    --fd-biggest: clamp(3rem, 8vw, 5rem);
+    --fs-xxl: 3.2rem;
+    --fs-biggest: clamp(3rem, 8vw, 5rem);
     /* font weight */
     --fw-regular: 400;
     --fw-medium: 500;
@@ -253,7 +253,7 @@ body {
 
     .nav__brand,
     .nav__toggle{
-        z-index:var(--zindex-fixed);
+        z-index: var(--zindex-fixed);
     }
 }
 
