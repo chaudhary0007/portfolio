@@ -1,6 +1,6 @@
 :root {
-    --color-primary: #25ab75;
-    --color-primary-dark: #208c61;
+    --color-primary: #1a32ba;
+    --color-primary-dark: #1b2984;
     --color-bg-primary: #1a1a1a;
     --color-bg-secondary: #242424;
     --color-bg-footer: #151515;
@@ -368,7 +368,52 @@ body {
   .skills__item i {
     color: var(--color-primary);
   }
+/* qualification */
+.qualification__wrapper {
+  margin-bottom: 5rem;
+}
 
+.qualification__content {
+  row-gap: 5rem;
+}
+
+.qualification__name {
+  display: flex;
+  column-gap: 1rem;
+  font-size: var(--fs-lg);
+  margin-bottom: 5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.qualification__title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  margin-bottom: 1rem;
+}
+
+.qualification__description {
+  margin-bottom: 2rem;
+}
+
+.qualification__date {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+}
+
+.qualification__footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: 10rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.qualification__footer-text {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
 
 
 
