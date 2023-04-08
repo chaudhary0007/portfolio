@@ -1,6 +1,6 @@
 :root {
-    --color-primary: #1a32ba;
-    --color-primary-dark: #1b2984;
+    --color-primary: #384ec9;
+    --color-primary-dark: #00139183;
     --color-bg-primary: #1a1a1a;
     --color-bg-secondary: #242424;
     --color-bg-footer: #151515;
@@ -186,7 +186,7 @@ body {
     height: 100%;
 }
 
-.nav__brand{
+.nav__icon{
     font-size: var(--fs-lg);
     font-weight: var(--fw-bold);
     color: var(--color-primary);
@@ -196,7 +196,7 @@ body {
 }
 
 
-.nav__brand i{
+.nav__icon i{
     color: var(--color-white);
 }
 
@@ -251,7 +251,7 @@ body {
         display:block;
     }
 
-    .nav__brand,
+    .nav__icon,
     .nav__toggle{
         z-index: var(--zindex-fixed);
     }
@@ -567,7 +567,100 @@ body {
 }
 
 
+/* responsive in devices */
 
+@media screen and (min-width: 560px) {
+  .service__wrapper {
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+  }
+
+  .qualification__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qualification__footer {
+    text-align: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .qualification__footer-text {
+    margin: 0;
+  }
+
+  .project__wrapper {
+    grid-template-columns: repeat(2, 250px);
+    justify-content: center;
+  }
+
+  .footer__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .home__content {
+    text-align: initial;
+  }
+
+  .home__title::after {
+    transform: none;
+    left: 0;
+  }
+
+  .home__info {
+    justify-content: initial;
+  }
+
+  .home__img {
+    justify-self: flex-end;
+  }
+}
+
+/* big device */
+
+@media screen and (min-width: 968px) {
+  .about__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__content {
+    margin: 0;
+  }
+
+  .about__content,
+  .skills__title {
+    text-align: initial;
+  }
+
+  .qualification__content,
+  .service__wrapper,
+  .project__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact__content {
+    margin: 0;
+    text-align: initial;
+  }
+
+  .footer__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 
 
